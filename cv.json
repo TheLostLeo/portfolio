@@ -1,180 +1,112 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Junior Full Stack Developer",
-    "image": "/me_avatar.jpg",
-    "email": "john.doe@example.com",
-    "phone": "+1 555-555-5555",
-    "url": "https://johndoe.dev",
-    "summary": "Junior Full Stack Developer with a passion for building web applications. Currently seeking opportunities to further develop my skills in a professional setting.",
-    "theme": "default",
+    "name": "Joel Anto",
+    "label": "Full Stack Developer",
+    "image": "/profile.jpg",
+    "email": "joelanto10e@gmail.com",
+    "phone": "0",
+    "url": "https://thelostleo.in",
+    "summary": "Full Stack Developer with a strong enthusiasm for hardware and robotics, combining software expertise with hands-on system integration to build innovative solutions.",
+    "theme": "blue",
     "location": {
       "address": "",
-      "postalCode": "10001",
-      "city": "Auckland",
-      "countryCode": "NZ",
-      "region": "New Zealand"
+      "postalCode": "0",
+      "city": "Thrissur",
+      "countryCode": "IN",
+      "region": "India"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "john-doe",
-        "url": "https://linkedin.com/in/john-doe"
+        "username": "Joel Anto",
+        "url": "https://linkedin.com/in/joelanto2005"
       },
       {
         "network": "X",
-        "username": "john-doe",
-        "url": "https://x.com/john-doe"
+        "username": "Joel Anto",
+        "url": "https://x.com/JoelAnto2011"
       },
       {
         "network": "GitHub",
-        "username": "johndoe",
-        "url": "https://github.com/johndoe"
+        "username": "thelostleo",
+        "url": "https://github.com/thelostleo"
       }
     ]
   },
   "work": [
     {
-      "name": "Tech Startup",
-      "position": "Junior Web Developer",
+      "name": "Robotic club",
+      "position": "Technical member",
       "location_type": "On site",
-      "location": "Auckland, New Zealand",
-      "url": "https://techstartup.com",
-      "startDate": "2024-01-01",
+      "location": "Chennai, India",
+      "url": "",
+      "startDate": "2023-09-01",
       "endDate": null,
-      "summary": "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs.",
+      "summary": "Designed and deployed expressive, multi-node robotics systems using ROS. Integrated Arduino, ESP, and other microcontrollers for sensor fusion, behavioral control, and real-world simulation. Collaborated on frontend visualizations to showcase robotics interactions in real-time.",
       "highlights": [
-        "Improved website performance by optimizing code"
+         "Engineered robotic systems with ROS nodes interfacing microcontrollers for adaptive sensing and control",
+        "Built modular launch files and C++/Python scripts for distributed behavior and data acquisition" 
       ],
       "responsibilities": [
-        "Collaborated with senior developers to design and implement web applications using modern JavaScript frameworks.",
-        "Assisted in debugging and optimizing front-end code to ensure smooth user experiences.",
-        "Participated in code reviews and contributed to improving coding standards within the team."
-      ],
-      "achievements": [
-        "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs."
+        "Programmed and interfaced ESP and Arduino microcontrollers for robotics control and sensor data acquisition",
+    "Integrated various sensors and actuators for real-world robotic functions including motion, feedback, and environmental interaction",
+    "Developed ROS nodes and launch files to orchestrate robot behavior across distributed systems"
       ],
       "skills": [
-        "React",
-        "Tailwind",
-        "GitHub"
+        "ROS",
+        "Arduino",
+         "ESP"
       ]
     },
-    {
-      "name": "Innovative Solutions",
-      "position": "Junior Software Developer",
-      "location_type": "Hybrid",
-      "location": "Wellington, New Zealand",
-      "url": "https://innovativesolutions.com",
-      "startDate": "2022-06-01",
-      "endDate": "2023-06-01",
-      "summary": "Assisting in the development and maintenance of software applications using Python and Django. Collaborating with cross-functional teams to ensure quality and timely delivery of software solutions.",
-      "highlights": [
-        "Contributed to a major project that streamlined internal workflows, improving efficiency by 30%"
-      ],
-      "responsibilities": [
-        "Developed and maintained backend services using Python and Django.",
-        "Worked closely with front-end developers to integrate user-facing elements with server-side logic.",
-        "Participated in daily stand-ups and bi-weekly sprint planning meetings to ensure alignment with project goals."
-      ],
-      "achievements": [
-        "Successfully implemented a feature that enhanced user authentication, improving security measures."
-      ],
-      "skills": [
-        "Python",
-        "Django",
-        "SQL",
-        "Git"
-      ]
-    },
-    {
-      "name": "Web Agency",
-      "position": "Intern Web Developer",
-      "location_type": "Remote",
-      "location": "Sydney, Australia",
-      "startDate": "2022-06-01",
-      "endDate": "2022-12-01",
-      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
-      "highlights": [
-        "Completed several client projects successfully"
-      ],
-      "skills": [
-        "HTML",
-        "CSS"
-      ]
-    }
+{
+  "name": "Reva Solar Racing",
+  "position": "Electrical Member",
+  "location_type": "Hybrid",
+  "location": "Chennai, India",
+  "url": null,
+  "startDate": "2023-09-01",
+  "endDate": null,
+  "summary": "Contributed to electrical integration and control systems for a solar-powered race car. Specialized in motor controller programming, solar panel setup, and charging system management to optimize energy usage and vehicle performance.",
+  "highlights": [
+    "Configured and tuned motor controllers for efficient propulsion and responsiveness",
+    "Implemented solar panel and battery charging workflows to maximize energy capture and reliability"
   ],
-  "volunteer": [
-    {
-      "organization": "Local Coding Club",
-      "position": "Volunteer",
-      "url": "https://codingclub.com/",
-      "startDate": "2021-01-01",
-      "endDate": "2022-01-01",
-      "summary": "Helped organize coding workshops and mentored new members.",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
-      ]
+  "responsibilities": [
+    "Installed and monitored solar panels to support onboard power and charging systems",
+    "Worked on motor controller interfacing and calibration for high-performance drive systems",
+    "Collaborated with cross-functional teams during field testing to refine electrical and energy systems"
+  ],
+  "achievements": [
+    "Helped build and deploy a fully functional solar race car with integrated energy and control systems"
+  ]
     }
   ],
   "education": [
     {
-      "institution": "State University",
-      "url": "https://stateuniversity.edu",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2018-09-01",
-      "endDate": "2022-05-01",
-      "score": "3.8",
-      "courses": [
-        "CS101 - Introduction to Computer Science",
-        "CS102 - Data Structures"
-      ]
+      "institution": "Devamathe CMI public school",
+      "url": "https://www.devamatha.com",
+      "studyType": "10th grade",
+      "startDate": "2011-05-01",
+      "endDate": "2021-05-01"
     },
     {
-      "institution": "Tech Institute",
-      "url": "https://techinstitute.edu",
-      "area": "Software Engineering",
-      "studyType": "Master",
-      "startDate": "2020-09-01",
-      "endDate": "2022-12-01",
-      "score": "3.9",
-      "courses": [
-        "SE201 - Advanced Software Development",
-        "SE202 - Software Architecture and Design"
-      ]
+      "institution": "saraswathi vidyanikethan school",
+      "url": "https://saraswathividyanikethanschool.com",
+      "area": "PCM",
+      "studyType": "12th grade",
+      "startDate": "2021-05-01",
+      "endDate": "2023-06-01"
     },
     {
-      "institution": "City College",
-      "url": "https://citycollege.edu",
-      "area": "Information Technology",
-      "studyType": "Associate Degree",
-      "startDate": "2017-01-01",
-      "endDate": "2019-12-01",
-      "score": "3.7",
-      "courses": [
-        "IT101 - Networking Fundamentals",
-        "IT102 - Database Management Systems"
-      ]
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Full Stack Web Development",
-      "date": "2023-05-01",
-      "issuer": "Online University",
-      "url": "https://onlineuniversity.com/certificates/fullstack"
+      "institution": "VIT Chennai",
+      "url": "https://chennai.vit.ac.in",
+      "area": "B tech",
+      "studyType": "B tech",
+      "startDate": "2023-08-07",
+      "endDate": ""
     }
   ],
   "skills": [
-    {
-      "name": "Figma",
-      "level": "Expert",
-      "keywords": [
-        "Design",
-        "UI"
-      ]
-    },
     {
       "name": "Gitlab",
       "level": "Intermediate",
@@ -232,16 +164,6 @@
       ]
     },
     {
-      "name": "Node",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "JavaScript",
-        "Server"
-      ]
-    },
-    {
       "name": "MySQL",
       "level": "Intermediate",
       "keywords": [
@@ -271,17 +193,6 @@
       ]
     },
     {
-      "name": "Next.js",
-      "level": "Beginner",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
-      ]
-    },
-    {
       "name": "React",
       "level": "Intermediate",
       "keywords": [
@@ -294,21 +205,12 @@
   ],
   "languages": [
     {
-      "language": "English",
+      "language": "Malayalam",
       "fluency": "Native speaker"
     },
     {
-      "language": "Spanish",
+      "language": "English",
       "fluency": "Intermediate"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Technology",
-      "keywords": [
-        "AI",
-        "Blockchain"
-      ]
     }
   ],
   "references": [
@@ -319,46 +221,15 @@
   ],
   "projects": [
     {
-      "name": "Personal Portfolio",
-      "isActive": false,
-      "description": "A personal portfolio website to showcase my projects and skills.",
-      "highlights": [
-        "Built with React and Tailwind CSS",
-        "Includes a blog and contact form"
-      ],
-      "url": "https://johndoe.dev",
-      "github": "https://github.com"
-    },
-    {
-      "name": "Weather App",
+      "name": "DefDrive",
+      "github":"https://github.com/thelostleo/defdrive",
       "isActive": true,
-      "description": "A web application that provides weather information for any location.",
+      "description": "A web platform that lets users upload files and share them instantly via secure, customizable download links..",
       "highlights": [
-        "Built with JavaScript and OpenWeatherMap API",
+        "Built with vite-react , tailwind CSS and typescript ",
         "Responsive design"
       ],
-      "url": "https://weatherapp.com"
-    },
-    {
-      "name": "Task Manager",
-      "isActive": true,
-      "description": "A simple task management app to keep track of daily tasks.",
-      "highlights": [
-        "Built with Node.js and MongoDB",
-        "User authentication and CRUD operations"
-      ],
-      "url": "https://taskmanager.com",
-      "github": "https://github.com"
-    },
-    {
-      "name": "E-commerce Site",
-      "isActive": false,
-      "description": "An online store built with Next.js and Stripe for payment processing.",
-      "highlights": [
-        "Product management and shopping cart functionality",
-        "Secure payment integration"
-      ],
-      "url": "https://ecommerce.com"
+      "url": "https://defdrive.wlan0.in"
     }
   ]
 }

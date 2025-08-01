@@ -2,7 +2,6 @@
 import { basics } from "@cv";
 import Section from "@/components/Section.astro";
 import Mail from "@/icons/Mail.astro";
-import Phone from "@/icons/Phone.astro";
 import X from "@/icons/X.astro";
 import LinkedIn from "@/icons/LinkedIn.astro";
 import GitHub from "@/icons/GitHub.astro";
@@ -60,13 +59,6 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 					)
 				}
 				{
-					phone && (
-						<a href={`tel:${phone}`} title={`Call ${name} at ${phone}`} target="_blank" rel="noopener noreferrer">
-							<Phone />
-						</a>
-					)
-				}
-				{
 					profiles.map(({ network, url }) => {
 						const Icon = SOCIAL_ICONS[network];
 
@@ -77,12 +69,6 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 						);
 					})
 				}
-				<div class="no-print footer-button max-sm:hidden group flex h-8 w-9 cursor-pointer items-center justify-center rounded-md text-skin-hue hover:bg-skin-button-accent hover:text-skin-inverted [&>span]:hover:text-skin-inverted">
-					<svg xmlns="http://www.w3.org/2000/svg" class="icon h-6 w-6 icon-tabler icon-tabler-command"  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-						<path d="M7 9a2 2 0 1 1 2 -2v10a2 2 0 1 1 -2 -2h10a2 2 0 1 1 -2 2v-10a2 2 0 1 1 2 2h-10"></path>
-					</svg>
-				</div>
 			</footer>
 		</div>
 		<figure class="print:hidden w-fit relative">
@@ -150,39 +136,21 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 </style>
 
 <script>
-	const select = document.getElementById("themeSwitch") as HTMLSelectElement;
-	const theme = localStorage.getItem("theme");
-	const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-
-	if (theme !== null) {
-		select.value = theme;
-	} else {
-		select.value = systemTheme;
-	}
-
-	function updateTheme(value: string) {
-		const theme = value === "system" ? systemTheme : value;
+	// Force dark mode always - no theme switching needed
+	function forceTheme() {
 		document.documentElement.classList.remove("light", "dark");
-		document.documentElement.classList.add(theme);
-		localStorage.setItem("theme", value);
+		document.documentElement.classList.add("dark");
+		localStorage.setItem("theme", "dark");
 	}
 
-	updateTheme(select.value);
+	forceTheme();
 
-	select.addEventListener("change", (event: Event) => {
-		const select = event.target as HTMLSelectElement;
-		updateTheme(select.value);
-	});
-
-	// Deshabilitar modo oscuro al imprimir
+	// Keep dark mode even during printing
 	window.addEventListener("beforeprint", () => {
-		document.documentElement.classList.remove("dark");
+		// Keep dark mode for printing
 	});
 
-	// Restaurar el modo oscuro después de imprimir
 	window.addEventListener("afterprint", () => {
-		if (select.value === "dark" || (select.value === "system" && systemTheme === "dark")) {
-			document.documentElement.classList.add("dark");
-		}
+		forceTheme();
 	});
 </script>

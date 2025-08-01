@@ -1,25 +1,19 @@
----
-import Theme from "@/icons/themeSwitch.astro";
----
-
-<div class="no-print inline-flex items-center">
-	<!-- <div class="flex items-center gap-1">
-		<Theme />
-		<select name="themeSwitch" id="themeSwitch" class="block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 dark:text-gray-100 dark:ring-gray-700 sm:text-sm sm:leading-6">
-			<option value="system">System</option>
-			<option value="dark">Dark</option>
-			<option value="light">Light</option>
-		</select>
-	</div> -->
-
-	<div class="group/theme flex items-center gap-2">
-		<label for="themeSwitch" class="flex items-center gap-1 text-sm font-medium leading-6 text-skin-base transition-transform ease-in-out group-hover/theme:rotate-45"> <Theme /></label>
-		<select id="themeSwitch" name="themeSwitch" class="focus:ring-skin-hue ring-skin-muted block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-skin-base ring-1 ring-inset focus:ring-2 sm:text-sm sm:leading-6">
-			<option value="system">System</option>
-			<option value="dark">Dark</option>
-			<option value="light">Light</option>
-		</select>
-	</div>
+<div class="no-print">
+	<!-- Download CV Button -->
+	<!-- <a 
+		href="/cv.pdf" 
+		download="John_Doe_CV.pdf"
+		class="group inline-flex items-center gap-2 px-3 py-2 rounded-md bg-transparent border border-skin-hue/30 text-skin-hue hover:bg-skin-hue/10 hover:border-skin-hue/50 transition-all duration-300 text-sm font-medium"
+		title="Download CV as PDF"
+	>
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+			<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+			<polyline points="7,10 12,15 17,10"/>
+			<line x1="12" y1="15" x2="12" y2="3"/>
+		</svg>
+		Download CV
+	</a> -->
+</div>
 
 	<style>
 		:global(.dark) {
@@ -28,28 +22,22 @@ import Theme from "@/icons/themeSwitch.astro";
 	</style>
 
 	<script>
-		const select = document.getElementById("themeSwitch") as HTMLSelectElement;
-		const theme = localStorage.getItem("theme");
-		const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-
-		if (theme !== null) {
-			select.value = theme;
-		} else {
-			select.value = systemTheme;
-		}
-
-		function updateTheme(value: string) {
-			const theme = value === "system" ? systemTheme : value;
+		// Force dark mode always
+		function forceTheme() {
 			document.documentElement.classList.remove("light", "dark");
-			document.documentElement.classList.add(theme);
-			localStorage.setItem("theme", value);
+			document.documentElement.classList.add("dark");
+			localStorage.setItem("theme", "dark");
 		}
 
-		updateTheme(select.value);
+		forceTheme();
 
-		select.addEventListener("change", (event: Event) => {
-			const select = event.target as HTMLSelectElement;
-			updateTheme(select.value);
+		// Ensure dark mode stays enabled on print
+		window.addEventListener("beforeprint", () => {
+			// Don't remove dark class for printing - keep it dark
+		});
+
+		window.addEventListener("afterprint", () => {
+			forceTheme();
 		});
 	</script>
 </div>

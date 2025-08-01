@@ -1,6 +1,5 @@
 ---
 import { basics } from "@cv";
-import Vengeance from "@/layouts/Vengeance.astro";
 
 interface Props {
 	title: string;
@@ -19,6 +18,8 @@ const { image, summary, url, theme } = basics;
 		<meta name="description" content={summary} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/favicon.svg" />
+		<link rel="shortcut icon" href="/favicon.svg" />
 		<link rel="preload" as="image" href={image} />
 
 		<meta property="og:url" content={url} />
@@ -37,9 +38,8 @@ const { image, summary, url, theme } = basics;
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim" />
 
 		<link rel="stylesheet" href="/themes/themes.css" />
-		<Vengeance />
 	</head>
-	<body data-theme={theme} class="relative bg-skin-fill">
+	<body data-theme={theme} class="dark relative bg-skin-fill">
 		<div class="absolute top-0 -z-10 h-full w-full print:hidden">
 			<div class="bg-skin-hue/10 absolute bottom-auto left-[20%] right-auto top-0 h-[200px] w-[200px] -translate-x-[30%] translate-y-[20%] rounded-full blur-[80px] invert-0 dark:bg-white/5"></div>
 		</div>
