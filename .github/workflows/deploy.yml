@@ -20,9 +20,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-env:
-  BUILD_PATH: "." # default value when not using subfolders
-
 jobs:
   build:
     name: Build
@@ -42,21 +39,21 @@ jobs:
           version: 8
           
       - name: Get pnpm store directory
+        id: pnpm-store
         shell: bash
         run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+          echo "store_path=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
           
       - name: Setup pnpm cache
         uses: actions/cache@v3
         with:
-          path: ${{ env.STORE_PATH }}
+          path: ${{ steps.pnpm-store.outputs.store_path }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
             
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-        working-directory: ${{ env.BUILD_PATH }}
         
       - name: Setup Pages
         id: pages
@@ -67,12 +64,11 @@ jobs:
           pnpm run build \
             --site "${{ steps.pages.outputs.origin }}" \
             --base "${{ steps.pages.outputs.base_path }}"
-        working-directory: ${{ env.BUILD_PATH }}
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ env.BUILD_PATH }}/dist
+          path: ./dist
 
   deploy:
     environment:
