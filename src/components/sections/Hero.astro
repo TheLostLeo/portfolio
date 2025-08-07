@@ -11,6 +11,14 @@ import type { SocialIcon } from "@/types";
 const { name, label, image, location, profiles, phone, email } = basics;
 const { city, region } = location;
 
+// Get the base path from Astro configuration
+const base = import.meta.env.BASE_URL;
+
+// Fix image path to include base URL
+const imageUrl = image.startsWith('/') 
+	? `${base.endsWith('/') ? base : base + '/'}${image.slice(1)}` 
+	: image;
+
 const SOCIAL_ICONS: SocialIcon = {
 	GitHub,
 	LinkedIn,
@@ -72,7 +80,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 			</footer>
 		</div>
 		<figure class="print:hidden w-fit relative">
-			<img class="shadow-lg shadow-skin-hues" src={image} alt={name} />
+			<img class="shadow-lg shadow-skin-hues" src={imageUrl} alt={name} />
 			<div class="pointer-events-none absolute -inset-2">
 				<div class="absolute -inset-y-8 right-0 w-px bg-skin-hue/50 [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>
 				<div class="absolute -inset-y-8 left-0 w-px bg-skin-hue/50 [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>
