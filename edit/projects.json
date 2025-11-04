@@ -1,0 +1,15 @@
+{
+  "projects": [
+    {
+      "name": "DefDrive",
+      "github": "https://github.com/thelostleo/defdrive",
+      "isActive": true,
+      "description": "A web platform that lets users upload files and share them instantly via secure, customizable download links..",
+      "highlights": [
+        "Built with vite-react , tailwind CSS and typescript ",
+        "Responsive design"
+      ],
+      "url": "https://defdrive.wlan0.in"
+    }
+  ]
+}

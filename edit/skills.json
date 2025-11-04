@@ -1,0 +1,109 @@
+{
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "Intermediate",
+      "keywords": [
+        "Programming",
+        "Backend",
+        "Scripting",
+        "Data Science"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Intermediate",
+      "keywords": [
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "Intermediate",
+      "keywords": [
+        "Containerization",
+        "DevOps",
+        "Deployment"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    }
+  ]
+}

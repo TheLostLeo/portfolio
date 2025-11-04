@@ -1,8 +1,8 @@
 ---
 import Section from "../Section.astro";
 
-import { education } from "@cv";
-// import { certificates } from "@cv";
+import { education } from "@education";
+// import { certificates } from "@education";
 ---
 
 <Section className={Astro.props.className} title="Education">
@@ -10,7 +10,7 @@ import { education } from "@cv";
 		{
 			education.map(({ institution, startDate, endDate, area, url }) => {
 				const startYear = new Date(startDate).getFullYear();
-				const endYear = endDate != null ? new Date(endDate).getFullYear() : "Actual";
+				const endYear = endDate && endDate !== "" ? new Date(endDate).getFullYear() : "Present";
 				const years = `${startYear} - ${endYear}`;
 
 				return (

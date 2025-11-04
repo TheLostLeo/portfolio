@@ -3,8 +3,20 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@cv": [
-        "./cv.json"
+      "@about": [
+        "./edit/about.json"
+      ],
+      "@experience": [
+        "./edit/experience.json"
+      ],
+      "@projects": [
+        "./edit/projects.json"
+      ],
+      "@skills": [
+        "./edit/skills.json"
+      ],
+      "@education": [
+        "./edit/education.json"
       ],
       "@/*": [
         "src/*"

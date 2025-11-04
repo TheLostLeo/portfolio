@@ -1,0 +1,36 @@
+{
+  "basics": {
+    "name": "Joel Anto",
+    "label": "Full Stack Developer",
+    "image": "/profile.jpg",
+    "email": "joelanto10e@gmail.com",
+    "phone": "0",
+    "url": "https://thelostleo.in",
+    "summary": "Full Stack Developer with a strong enthusiasm for hardware and robotics, combining software expertise with hands-on system integration to build innovative solutions.",
+    "theme": "blue",
+    "location": {
+      "address": "",
+      "postalCode": "0",
+      "city": "Thrissur",
+      "countryCode": "IN",
+      "region": "India"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Joel Anto",
+        "url": "https://linkedin.com/in/joelanto2005"
+      },
+      {
+        "network": "X",
+        "username": "Joel Anto",
+        "url": "https://x.com/JoelAnto2011"
+      },
+      {
+        "network": "GitHub",
+        "username": "thelostleo",
+        "url": "https://github.com/thelostleo"
+      }
+    ]
+  }
+}
