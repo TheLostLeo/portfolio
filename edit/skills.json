@@ -2,108 +2,88 @@
   "skills": [
     {
       "name": "HTML",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend"
-      ]
+      "category": "Frontend",
+      "icon": "html"
     },
     {
       "name": "CSS",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Responsive Design"
-      ]
+      "category": "Frontend",
+      "icon": "css"
     },
     {
       "name": "JavaScript",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "Fullstack"
-      ]
+      "category": "Frontend",
+      "icon": "javascript"
     },
     {
       "name": "Tailwind",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "CSS Framework",
-        "Responsive Design"
-      ]
+      "category": "Frontend",
+      "icon": "tailwind"
     },
     {
       "name": "TypeScript",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "JavaScript Superset"
-      ]
-    },
-    {
-      "name": "Python",
-      "level": "Intermediate",
-      "keywords": [
-        "Programming",
-        "Backend",
-        "Scripting",
-        "Data Science"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "level": "Intermediate",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
-    },
-    {
-      "name": "Docker",
-      "level": "Intermediate",
-      "keywords": [
-        "Containerization",
-        "DevOps",
-        "Deployment"
-      ]
-    },
-    {
-      "name": "Git",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code",
-        "Git"
-      ]
+      "category": "Frontend",
+      "icon": "type"
     },
     {
       "name": "React",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
+      "category": "Frontend",
+      "icon": "react"
+    },
+    {
+      "name": "Node.js",
+      "category": "Backend",
+      "icon": "node"
+    },
+    {
+      "name": "Python",
+      "category": "Backend",
+      "icon": "python"
+    },
+    {
+      "name": "MySQL",
+      "category": "Backend",
+      "icon": "sql"
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Backend",
+      "icon": "postgresql"
+    },
+    {
+      "name": "Docker",
+      "category": "DevOps",
+      "icon": "docker"
+    },
+    {
+      "name": "Git",
+      "category": "DevOps",
+      "icon": "git"
+    },
+    {
+      "name": "GitHub",
+      "category": "DevOps",
+      "icon": "GitHub"
+    },
+    {
+      "name": "ROS",
+      "category": "Robotics",
+      "icon": "ros"
+    },
+    {
+      "name": "Arduino",
+      "category": "Robotics",
+      "icon": "c"
+    },
+    {
+      "name": "C++",
+      "category": "Robotics",
+      "icon": "cpp"
+    },
+    {
+      "name": "Go",
+      "category": "Backend",
+      "icon": "go"
     }
   ]
 }

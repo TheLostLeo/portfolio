@@ -3,25 +3,21 @@
     {
       "institution": "Devamathe CMI public school",
       "url": "https://www.devamatha.com",
-      "studyType": "10th grade",
       "startDate": "2011-05-01",
       "endDate": "2021-05-01"
     },
     {
-      "institution": "saraswathi vidyanikethan school",
+      "institution": "Saraswathi Vidyanikethan School",
       "url": "https://saraswathividyanikethanschool.com",
-      "area": "PCM",
-      "studyType": "12th grade",
       "startDate": "2021-05-01",
       "endDate": "2023-06-01"
     },
     {
       "institution": "VIT Chennai",
       "url": "https://chennai.vit.ac.in",
-      "area": "B tech",
-      "studyType": "B tech",
       "startDate": "2023-08-07",
-      "endDate": ""
+      "endDate": null,
+      "ongoing": true
     }
   ]
 }

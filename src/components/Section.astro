@@ -2,7 +2,12 @@
 const { className, title } = Astro.props;
 ---
 
-<section class:list={["flex flex-col gap-4 print:gap-0", className]}>
-	{title && <h3 class="relative flex w-full items-center gap-3 pb-4 text-3xl print:gap-1 print:pb-0 print:text-xl">{title}</h3>}
+<section class:list={["flex flex-col gap-6 print:gap-0", className]}>
+	{title && (
+		<div class="relative flex w-full items-center gap-3 pb-4 print:gap-1 print:pb-0">
+			<h3 class="text-3xl font-bold text-skin-base print:text-xl relative z-10">{title}</h3>
+			<div class="hidden md:block flex-1 h-px bg-gradient-to-r from-skin-hue via-skin-hue/50 to-transparent"></div>
+		</div>
+	)}
 	<slot />
 </section>

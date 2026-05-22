@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Joel Anto",
-    "label": "Full Stack Developer",
+    "label": "Hardware Enthusiast",
     "image": "/profile.jpg",
     "email": "joelanto10e@gmail.com",
     "phone": "0",
     "url": "https://thelostleo.in",
-    "summary": "Full Stack Developer with a strong enthusiasm for hardware and robotics, combining software expertise with hands-on system integration to build innovative solutions.",
+    "summary": "Hardware enthusiast focused on microcontrollers, microprocessors, and hardware-software integration, with an interest in building practical systems that combine embedded hardware and software development.",
     "theme": "blue",
     "location": {
       "address": "",

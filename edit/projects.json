@@ -2,14 +2,17 @@
   "projects": [
     {
       "name": "DefDrive",
-      "github": "https://github.com/thelostleo/defdrive",
-      "isActive": true,
-      "description": "A web platform that lets users upload files and share them instantly via secure, customizable download links..",
+      "category": "Web Development",
+      "description": "A web platform that lets users upload files and share them instantly via secure, customizable download links.",
+      "isActive": false,
       "highlights": [
-        "Built with vite-react , tailwind CSS and typescript ",
-        "Responsive design"
+        "Built with Vite-React, Tailwind CSS and TypeScript",
+        "Responsive design for all devices",
+        "Secure file sharing with customizable links"
       ],
-      "url": "https://defdrive.wlan0.in"
+      "technologies": ["React", "Vite", "TypeScript", "Tailwind CSS"],
+      "url": "https://defdrive.wlan0.in",
+      "github": "https://github.com/thelostleo/defdrive"
     }
   ]
 }

@@ -1,0 +1,131 @@
+---
+// Animated background component with floating orbs and gradients
+---
+
+<div class="fixed inset-0 -z-10 h-screen w-screen overflow-hidden bg-skin-fill">
+	<!-- Animated gradient orbs -->
+	<div class="absolute inset-0 overflow-hidden">
+		<!-- Floating orb 1 - top left -->
+		<div class="absolute -top-20 -left-20 h-96 w-96 animate-float-1 rounded-full bg-gradient-to-br from-skin-hue/30 via-skin-hue/20 to-transparent blur-3xl"></div>
+
+		<!-- Floating orb 2 - top right -->
+		<div class="absolute -top-32 -right-32 h-80 w-80 animate-float-2 rounded-full bg-gradient-to-bl from-skin-hue/25 via-skin-hue/15 to-transparent blur-3xl"></div>
+
+		<!-- Floating orb 3 - bottom left -->
+		<div class="absolute -bottom-32 -left-32 h-96 w-96 animate-float-3 rounded-full bg-gradient-to-tr from-skin-hue/20 via-skin-hue/10 to-transparent blur-3xl"></div>
+
+		<!-- Floating orb 4 - bottom right -->
+		<div class="absolute -bottom-20 -right-20 h-80 w-80 animate-float-4 rounded-full bg-gradient-to-tl from-skin-hue/25 via-skin-hue/15 to-transparent blur-3xl"></div>
+
+		<!-- Center subtle glow -->
+		<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-96 w-96 animate-pulse rounded-full bg-skin-hue/5 blur-3xl"></div>
+	</div>
+
+	<!-- Animated grid pattern -->
+	<div class="absolute inset-0 opacity-10 dark:opacity-5">
+		<div class="h-full w-full" style="backgroundImage: 'linear-gradient(rgba(var(--color), 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(var(--color), 0.1) 1px, transparent 1px)'; backgroundSize: '50px 50px'"></div>
+	</div>
+</div>
+
+<style is:global>
+	@keyframes float-1 {
+		0%, 100% {
+			transform: translate(0, 0) scale(1);
+			opacity: 0.3;
+		}
+		25% {
+			transform: translate(50px, -50px) scale(1.1);
+			opacity: 0.4;
+		}
+		50% {
+			transform: translate(100px, 50px) scale(1);
+			opacity: 0.35;
+		}
+		75% {
+			transform: translate(30px, 100px) scale(1.05);
+			opacity: 0.38;
+		}
+	}
+
+	@keyframes float-2 {
+		0%, 100% {
+			transform: translate(0, 0) scale(1.05);
+			opacity: 0.25;
+		}
+		25% {
+			transform: translate(-80px, 60px) scale(1);
+			opacity: 0.3;
+		}
+		50% {
+			transform: translate(-120px, -40px) scale(1.1);
+			opacity: 0.28;
+		}
+		75% {
+			transform: translate(-50px, -80px) scale(1);
+			opacity: 0.26;
+		}
+	}
+
+	@keyframes float-3 {
+		0%, 100% {
+			transform: translate(0, 0) scale(1);
+			opacity: 0.2;
+		}
+		25% {
+			transform: translate(100px, 80px) scale(1.08);
+			opacity: 0.25;
+		}
+		50% {
+			transform: translate(50px, 120px) scale(1);
+			opacity: 0.22;
+		}
+		75% {
+			transform: translate(-50px, 60px) scale(1.05);
+			opacity: 0.24;
+		}
+	}
+
+	@keyframes float-4 {
+		0%, 100% {
+			transform: translate(0, 0) scale(1.02);
+			opacity: 0.28;
+		}
+		25% {
+			transform: translate(-70px, -90px) scale(1);
+			opacity: 0.32;
+		}
+		50% {
+			transform: translate(-100px, 50px) scale(1.08);
+			opacity: 0.3;
+		}
+		75% {
+			transform: translate(30px, -120px) scale(1);
+			opacity: 0.28;
+		}
+	}
+
+	.animate-float-1 {
+		animation: float-1 20s ease-in-out infinite;
+	}
+
+	.animate-float-2 {
+		animation: float-2 22s ease-in-out infinite;
+	}
+
+	.animate-float-3 {
+		animation: float-3 24s ease-in-out infinite;
+	}
+
+	.animate-float-4 {
+		animation: float-4 26s ease-in-out infinite;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.animate-float-1,
+		.animate-float-2,
+		.animate-float-3,
+		.animate-float-4 {
+			animation: none;
+		}
+	}
+</style>

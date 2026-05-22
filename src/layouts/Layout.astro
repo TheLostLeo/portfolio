@@ -1,5 +1,7 @@
 ---
 import { basics } from "@about";
+import "@/styles/animations.astro";
+import AnimatedBackground from "@/components/AnimatedBackground.astro";
 
 interface Props {
 	title: string;
@@ -47,10 +49,8 @@ const imageUrl = image.startsWith('/')
 
 		<link rel="stylesheet" href={`${base.endsWith('/') ? base : base + '/'}themes/themes.css`} />
 	</head>
-	<body data-theme={theme} class="dark relative bg-skin-fill">
-		<div class="absolute top-0 -z-10 h-full w-full print:hidden">
-			<div class="bg-skin-hue/10 absolute bottom-auto left-[20%] right-auto top-0 h-[200px] w-[200px] -translate-x-[30%] translate-y-[20%] rounded-full blur-[80px] invert-0 dark:bg-white/5"></div>
-		</div>
+	<body data-theme={theme} class="dark relative bg-skin-fill transition-colors duration-300">
+		<AnimatedBackground />
 		<slot />
 		<style is:global>
 			body,
